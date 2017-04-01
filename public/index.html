@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Simple Task
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <div id="form-test" class="loss-aversion-container">
+        <div class="loss-aversion-box">
+            <div id="Questionaire">
+                <h2>Thanks!</h2>
+                <p>How frustrating was that?</p>
+                <div id="slider">
+                    0 <input id="slide" type="range" min="0" max="10" step="1" value="0" onchange="updateSlider(this.value)"
+                    /> 10
+                </div> <br />
+                <p id="slider-answer">0</p>
+                <button class="loss-aversion-button" id="done">Done</button>
+            </div>
+
+
+            <div id="Final">
+                <h2>Thanks!! That's it.</h2>
+            </div>
+
+
+            <div class='form-text'>
+                <h2>Course Evaluation</h2>
+                <div class="inline">
+                    <label class="textInput">Your Name</label>
+                    <input type="text" class="textInputField" id="name">
+                </div>
+                <div class="inline">
+                    <label class="textInput">Course Name</label>
+                    <input type="text" class="textInputField" id="course-name">
+                    <p class="helper">(any course you have taken this semester)</p>
+                </div>
+
+                <div class="inline">
+                    <label class="textInput">Overall Rating</label>
+                    <input type="text" class="textInputField" id="rating">
+                    <!--                <p class="helper">(choose any course you have taken this semester)</p> -->
+                </div>
+                <p class='static-message'></p>
+                <button class="loss-aversion-button" id="submit">Submit</button>
+            </div>
+
+
+        </div>
+
+        <p class="over-it">This form is not working.</p>
+    </div>
+        <script language="JavaScript" src='js/script.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+
+.loss-aversion-container {
+      width: 40vw;
+      height: 25vw;
+      margin: 0 auto 40px;
+     perspective: 600px;
+            transition: all 0.0s ease-in-out;
+  font-family: Sans-serif;
+
+
+    }
+
+ .loss-aversion-box {
+   display: block;
+       border: 1px solid #CCC;
+       border-radius: 20px;
+/*       box-shadow: 5px 15px 15px 10px rgba(50,50,50,.2); */
+      /*width: 100%;*/
+      /*height: 100%;*/
+      background-color: whitesmoke;
+      transform: rotateY( 0deg );
+    }
+
+
+
+.loss-aversion-button{
+  margin: 30px;
+  height: 50px;
+  font-size: 2em;
+  background: mediumslateblue;
+  color: white;
+  outline: none;
+
+}
+
+.loss-aversion-button:hover{
+  background: indigo;
+  color: white;
+
+}
+
+.textInput{
+  font-size: 1.5em;
+}
+
+.loss-aversion-h2 {
+  font-size: 2.1em;
+  color: mediumslateblue;
+}
+
+
+.textInputField:focus{
+  border: 1px black solid;
+    outline: none;
+}
+
+
+.form-test{
+  display: block;
+}
+
+.form-text{
+/*   width: 100%; */
+  left: 50%;
+  text-align: center;
+    position: relative;
+  transform: translateX(-50%);
+}
+
+.inline{
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.form-text .textInputField {
+  height: 30px;
+  width: 260px;
+  font-size: 1.5em;
+  color: rgb(100,100,100);
+}
+
+#Questionaire{
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+/*   opacity: 0; */
+}
+
+#Final{
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+/*   opacity: 0; */
+}
+
+#slider-answer{
+  font-size: 2em;
+}
+
+.helper{
+  color: grey;
+  position: relative;
+  top: -15px;
+  font-size: .9em;
+}
+
+
+@keyframes wiggle {
+  10%{
+     transform: rotateY( 35deg );
+  }
+  35%{
+     transform: rotateY( -35deg );
+  }
+   50%{
+     transform: rotateY( 20deg );
+  }
+  85%{
+     transform: rotateY( -15deg );
+  }
+}
+
+
+.over-it{
+  margin-top: 35px;
+  text-align: center;
+  text-decoration: underline;
+  color: grey;
+  opacity: 0;
+  z-index: 500;
+}
+
+.over-it:hover{
+  cursor: pointer;
+}
