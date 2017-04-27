@@ -100,6 +100,7 @@ function sendrequest() {
 // send Request fom second form
 function sendReview() {
   const nameVal = $('#name').val();
+  const writtenVal = $('#feelings').val();
   const sliderVal = $('#slide').val();
   $.ajax({
     url: '/userexperience',
@@ -109,6 +110,7 @@ function sendReview() {
       quit,
       animationOn: AnimationOn,
       frustration: sliderVal,
+      written: writtenVal,
     },
     success(response) {
       console.log(response);
@@ -191,4 +193,3 @@ function submit() {
   $('#Final').fadeIn('fast');
   sendReview();
 }
-

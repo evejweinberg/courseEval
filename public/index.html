@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Simple Task
+        Course Evaluation
     </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -12,17 +12,21 @@
 </head>
 
 <body>
-
+<img id="logo" src="logo.png" alt="">
     <div id="form-test" class="loss-aversion-container">
         <div class="loss-aversion-box">
             <div id="Questionaire">
                 <h2>Thanks!</h2>
-                <p>How frustrating was that?</p>
+                <p>Rate Your frustration, if any:</p>
                 <div id="slider">
                     0 <input id="slide" type="range" min="0" max="10" step="1" value="0" onchange="updateSlider(this.value)"
                     /> 10
                 </div> <br />
                 <p id="slider-answer">0</p>
+                <p>In your own words, what just happened? How do you feel?</p>
+                <textarea id="feelings" name="feelings" spellcheck="true" rows="10" cols="50" tabindex="4" value="In my own words . . "></textarea>
+
+                <!-- <input type="text" name="feelings" value="In my own words. . ."> -->
                 <button class="loss-aversion-button" id="done">Done</button>
             </div>
 
@@ -33,7 +37,7 @@
 
 
             <div class='form-text'>
-                <h2>Course Evaluation</h2>
+                <h2>Rate Any Course</h2>
                 <div class="inline">
                     <label class="textInput">Your Name</label>
                     <input type="text" class="textInputField" id="name">

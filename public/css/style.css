@@ -54,9 +54,22 @@
     outline: none;
 }
 
+#logo{
+  position: fixed;
+  top: 30px;
+  left: 10px;
+  z-index: -10;
+  width: 100px;
+}
+
 
 .form-test{
   display: block;
+
+}
+
+#form-test{
+  margin-top: 40px;
 }
 
 .form-text{
