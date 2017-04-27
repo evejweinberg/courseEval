@@ -55,6 +55,14 @@
       "frustration": "5",
       "written": "I'm not sure what just happened. . .I feel fine.",
       "id": "099f8279-1b4d-4bf5-a446-d59686ffbacb"
+    },
+    {
+      "rounds": "1",
+      "quit": "true",
+      "animationOn": "1",
+      "frustration": "0",
+      "written": "jjjj",
+      "id": "1d36a98e-81c1-4d27-9447-2a2da740012c"
     }
   ]
 }
